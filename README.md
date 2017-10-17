@@ -9,7 +9,8 @@ Simply allow execution of wifipassword (either by rightclicking and selecting "a
 
 # Code Explanation:
 
-`#!/bin/bash
+```bash
+#!/bin/bash
 The header needed to run.
 
 WIFI="$(iwgetid -r)"
@@ -19,6 +20,6 @@ echo ${WIFI}
 Say the Wi-Fi Name.
 
 awk '/psk=/{print $NF}' /etc/NetworkManager/system-connections/${WIFI} | cut -c 5-
-Print out the saved password of this wifi and trim the results (so you don't see "psk=").`
-
+Print out the saved password of this wifi and trim the results (so you don't see "psk=").
+```
 # You can also drag this file into /usr/bin to execute it from the Terminal anytime you want!
