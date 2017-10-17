@@ -3,6 +3,8 @@
 Quickly get the Wifi Password on Debian Linux
 
 # How to use:
+This only works on Linux. Tested on Debian Wheezy.
+Download the "wifipassword" file.
 Simply allow execution of wifipassword (either by rightclicking and selecting "allow executing file as a program", or with chmod +x) and run from Terminal.
 
 # Code Explanation:
